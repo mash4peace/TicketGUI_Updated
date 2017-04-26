@@ -12,9 +12,8 @@ public class ResolvedTicket extends Ticket {
         return resolution;
     }
 
-    protected ResolvedTicket(String desc, int p, String rep, Date date, String res) {
-        super(desc, p, rep, date);
-
+    protected ResolvedTicket(int id, String desc, int p, String rep, Date date, String res) {
+        super(id, desc, p, rep, date);
         this.resolution = res;
 
     }

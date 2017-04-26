@@ -35,6 +35,21 @@ public class Ticket  {
         ticketIdCounter++;
     }
 
+
+    public Ticket(int id, String desc, int p, String rep, Date date) {
+        this.description = desc;
+        this.priority = p;
+        this.reporter = rep;
+        this.dateReported = date;
+        this.ticketID = id;
+        //ticketIdCounter++;
+    }
+
+    public void setup() {
+        //do whatever here
+    }
+
+
     protected int getPriority() {
         return priority;
     }
