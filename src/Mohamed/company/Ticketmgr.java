@@ -110,7 +110,7 @@ public class Ticketmgr extends JFrame {
                     int p = t.getPriority();
 
 
-                    ResolvedTicket rt = new ResolvedTicket(problem, p, rep, date, resolution);
+                    ResolvedTicket rt = new ResolvedTicket(t.getTicketID(), problem, p, rep, date, resolution);
 
                 /*
                 Before I remove the item , I want to add it resolve ticket lists
